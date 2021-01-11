@@ -1,4 +1,6 @@
-# Install Contour in IBM Cloud
+# Install PyTorch in IBM Cloud
+
+Are you a data scientist using the IBM Cloud? Well, this documentation is for you. It will guide you on how to install PyTorch on the IBM Cloud using the Kubernetes Service. Simple and effective so you can start programming or using your PyTorch based Machine and Deep Learning models.
 
 ## Pre-requisites
 
@@ -7,7 +9,7 @@ If you have a Lite account, you can upgrade it. Click [here](https://cloud.ibm.c
 
 ## Step 1: Provision Kubernetes Cluster
 
-* Click on the search section at the top of the main page, type Kubernetes, and then choose Kubernetes cluster.
+* Click on the search section at the top of the main page, type Kubernetes, and then choose Kubernetes Service.
 
 ![](Kubernetes1.PNG)
 
@@ -31,13 +33,13 @@ If you have a Lite account, you can upgrade it. Click [here](https://cloud.ibm.c
 ![Screenshot](Storage2.PNG)
 
 
-## Step 3: Install Contour
+## Step 3: Install PyTorhc
 
-* Click on the search section at the top of the main page, type Contour and click on it.
+* Click on the search section at the top of the main page, type PyTorch and click on it.
 
 ![Screenshot](contour1.PNG)
 
-* A new window opens, select the cluster and enter the name you want for the Contour workspace, in this case, it will be called _contour-example_, accept the terms and click on *Install*. You can modify the different installation parameters at the bottom. We will leave them by default as shown below, but you can read more about setting up the parameters [here](https://cloud.ibm.com/catalog/content/contour-Qml0bmFtaS1jb250b3Vy-global#about "here").
+* A new window opens, select the cluster and enter the name you want for the Contour workspace, in this case, it will be called _pytorch-example_, accept the terms and click on *Install*. You can modify the different installation parameters at the bottom. We will leave them by default as shown below, but you can read more about setting up the parameters [here](https://cloud.ibm.com/catalog/content/contour-Qml0bmFtaS1jb250b3Vy-global#about "here").
 
 ![Screenshot](contour2.PNG)
 
@@ -52,11 +54,11 @@ If you have a Lite account, you can upgrade it. Click [here](https://cloud.ibm.c
 
 ![Screenshot](test2.PNG)
 
-* A window opens to install the web terminal, click on install and wait a few minutes.
+* A window opens to install the web terminal, click on install and wait a few minutes. The window will pop up at the buttom If the web terminal is already installed.
 
 ![Screenshot](test3.PNG)
 
-* Once you have installed the terminal, click on the action button again, select web terminal, and type the following command. It will show you the workspaces of your cluster. You can see *contour-example* is now active.
+* Once you have installed the terminal, click on the action button again, select web terminal, and type the following commands. It will show you the workspaces of your cluster. You can see *pytorch-example* is now active.
 
 `$ kubectl get ns`
 
