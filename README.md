@@ -75,7 +75,7 @@ The following checkmark and the word 'normal' will appear once the Kubernetes Cl
 
 * Go to *Resources List* in the Left Navigation Menu and click on *Kubernetes*.
 
-![Screenshot](test1.PNG)
+![Screenshot](test11.PNG)
 
 * Click the *Actions* button and select *Web terminal*.
 
@@ -107,7 +107,7 @@ The following checkmark and the word 'normal' will appear once the Kubernetes Cl
 
 `$ kubectl exec --stdin --tty PODNAME -n NAMESPACE -- /bin/bash`
 
-And finally check if PyTorch is correctly installed checking its version:
+* And finally, check if PyTorch is correctly installed checking its version:
 
 `python -c "import torch; print(torch.__version__)"`
 
