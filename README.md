@@ -13,13 +13,40 @@ If you have a Lite account, you can upgrade it. Click [here](https://cloud.ibm.c
 
 ![](Kubernetes1.PNG)
 
-* A new window opens, select between the free and standard type under "Pricing plan". We'll choose the free plan for the purposes of this documentation. Once selected, click on create.
+* In the new window, select between the free and standard type under "Pricing plan". Once selected, click on create.
 
-![Screenshot](Kubernetes2.PNG)
+![Screenshot](KubernetesPaid1.PNG)
 
-* We then wait a few minutes. The following checkmark and the word 'normal' will appear once the Kubernetes Cluster is deployed.
+* We'll choose the Standard Plan for the purposes of this documentation as the Free Plan may fall short in resources when deploying your pods. We highly recommend to use a Standard Plan with the hardware that suits you the best. If you're selecting the Standard Plan, please make sure you select the adequate requirements,
 
-![Screenshot](Kubernetes3.PNG)
+* Select your Kubernetes Version to be latest available or the required one by your application. In our example we have set it to be '1.18.13'.
+* Select Infrastructure as 'Classic'.
+* Leave Resource Group to 'Default'.
+* Select Geography to the one that suits you better.
+* Select Availability to be 'Single Zone' or 'Multi Zone' depending on your needs.
+* Select a Worker Zone that suits you better or that fits your infrastructure.
+
+![Screenshot](KubernetesPaid2.PNG)
+
+* Select the number of workers in Worker Pool.
+* Give your Worker Pool a name.
+* Leave the Encrypt Local Disk option 'On'
+* Choose 'Both private and public endpoints' on Master Service Endpoint
+
+![Screenshot](KubernetesPaid4.PNG)
+
+* Give your cluster a name in 'cluster-name'
+* Provide the tags to your cluster and click on Create.
+
+![Screenshot](KubernetesPaid5.PNG)
+
+Wait a few minutes while your cluster is deployed.
+
+![Screenshot](KubernetesPaid3.PNG)
+
+* The following checkmark and the word 'normal' will appear once the Kubernetes Cluster is deployed. You can check it under your cluster section which is located in your *Resources List*.
+
+![Screenshot](KubernetesPaid6.PNG)
 
 
 ## Step 2:  Deploy IBM Cloud Block Storage plug-in
@@ -30,18 +57,18 @@ If you have a Lite account, you can upgrade it. Click [here](https://cloud.ibm.c
 
 * A new window opens, select the cluster and enter the name you want for this workspace, in this case, it will be called _storage-example_, accept the terms, click *Install* and wait a few minutes.
 
-![Screenshot](Storage2.PNG)
+![Screenshot](StoragePaid1.PNG)
 
 
-## Step 3: Install PyTorhc
+## Step 3: Install PyTorch
 
 * Click on the search section at the top of the main page, type PyTorch and click on it.
 
-![Screenshot](contour1.PNG)
+![Screenshot](pytorch1.PNG)
 
 * A new window opens, select the cluster and enter the name you want for the Contour workspace, in this case, it will be called _pytorch-example_, accept the terms and click on *Install*. You can modify the different installation parameters at the bottom. We will leave them by default as shown below, but you can read more about setting up the parameters [here](https://cloud.ibm.com/catalog/content/contour-Qml0bmFtaS1jb250b3Vy-global#about "here").
 
-![Screenshot](contour2.PNG)
+![Screenshot](pytorch2.PNG)
 
 
 ## Step 4: Verify Installation
@@ -58,19 +85,31 @@ If you have a Lite account, you can upgrade it. Click [here](https://cloud.ibm.c
 
 ![Screenshot](test3.PNG)
 
+![Screenshot](test7.PNG)
+
 * Once you have installed the terminal, click on the action button again, select web terminal, and type the following commands. It will show you the workspaces of your cluster. You can see *pytorch-example* is now active.
 
 `$ kubectl get ns`
 
 ![Screenshot](test4.PNG)
 
-`$ kubectl get pod -n contour-example -o wide`
+`$ kubectl get pod -n NAMESERVICE -o wide`
 
 ![Screenshot](test5.PNG)
 
-`kubectl get service -n contour-example`
+`$ kubectl get service -n NAME SERVICE`
 
 ![Screenshot](test6.PNG)
 
-You have finished the installation, enjoy your Contour installation!
+* Select the pod within your service using bash,
+
+`$ kubectl exec --stdin --tty PODNAME -n NAMESPACE -- /bin/bash`
+
+And finally check if PyTorch is correctly installed checking its version,
+
+`python -c "import torch; print(torch.__version__)"`
+
+![Screenshot](test8.PNG)
+
+You have finished the installation, enjoy your PyTorch installation!
 
