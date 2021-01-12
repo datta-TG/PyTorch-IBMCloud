@@ -75,7 +75,7 @@ The following checkmark and the word 'normal' will appear once the Kubernetes Cl
 
 * Go to *Resources List* in the Left Navigation Menu and click on *Kubernetes*.
 
-![Screenshot](test11.PNG)
+![Screenshot](test11.png)
 
 * Click the *Actions* button and select *Web terminal*.
 
