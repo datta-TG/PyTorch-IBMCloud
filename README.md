@@ -44,7 +44,7 @@ Wait a few minutes while your cluster is deployed.
 
 ![Screenshot](KubernetesPaid3.PNG)
 
-* The following checkmark and the word 'normal' will appear once the Kubernetes Cluster is deployed. You can check it under your cluster section which is located in your *Resources List*.
+The following checkmark and the word 'normal' will appear once the Kubernetes Cluster is deployed. You can check it under your cluster section which is located in your *Resources List*.
 
 ![Screenshot](KubernetesPaid6.PNG)
 
@@ -87,11 +87,13 @@ Wait a few minutes while your cluster is deployed.
 
 ![Screenshot](test7.PNG)
 
-* Once you have installed the terminal, click on the action button again, select web terminal, and type the following commands. It will show you the workspaces of your cluster. You can see *pytorch-example* is now active.
+* Once you have installed the terminal, click on the action button again, select web terminal, and type the following command. It will show you the workspaces of your cluster. You can see *pytorch-example* is now active.
 
 `$ kubectl get ns`
 
 ![Screenshot](test4.PNG)
+
+* You can then obtain more data about the service and it's pods.
 
 `$ kubectl get pod -n NAMESERVICE -o wide`
 
@@ -101,11 +103,11 @@ Wait a few minutes while your cluster is deployed.
 
 ![Screenshot](test6.PNG)
 
-* Select the pod within your service using bash,
+* Select the pod within your service using bash.
 
 `$ kubectl exec --stdin --tty PODNAME -n NAMESPACE -- /bin/bash`
 
-And finally check if PyTorch is correctly installed checking its version,
+And finally check if PyTorch is correctly installed checking its version:
 
 `python -c "import torch; print(torch.__version__)"`
 
