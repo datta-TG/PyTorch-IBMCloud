@@ -66,7 +66,7 @@ The following checkmark and the word 'normal' will appear once the Kubernetes Cl
 
 ![Screenshot](pytorch1.PNG)
 
-* A new window opens, select the cluster and enter the name you want for the Contour workspace, in this case, it will be called _pytorch-example_, accept the terms and click on *Install*. You can modify the different installation parameters at the bottom. We will leave them by default as shown below, but you can read more about setting up the parameters [here](https://cloud.ibm.com/catalog/content/contour-Qml0bmFtaS1jb250b3Vy-global#about "here").
+* A new window opens, select the cluster and enter the name you want for the Contour workspace, in this case, it will be called _pytorch-example_, accept the terms and click on *Install*. You can modify the different installation parameters at the bottom. We will leave them by default as shown below, but you can read more about setting up the parameters [here](https://cloud.ibm.com/catalog/content/pytorch "here").
 
 ![Screenshot](pytorch2.PNG)
 
@@ -84,8 +84,6 @@ The following checkmark and the word 'normal' will appear once the Kubernetes Cl
 * A window opens to install the web terminal, click on install and wait a few minutes. The window will pop up at the buttom If the web terminal is already installed.
 
 ![Screenshot](test3.PNG)
-
-![Screenshot](test7.PNG)
 
 * Once you have installed the terminal, click on the action button again, select web terminal, and type the following command. It will show you the workspaces of your cluster. You can see *pytorch-example* is now active.
 
