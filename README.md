@@ -66,7 +66,7 @@ The following checkmark and the word 'normal' will appear once the Kubernetes Cl
 
 ![Screenshot](pytorch1.PNG)
 
-* A new window opens, select the cluster and enter the name you want for the Contour workspace, in this case, it will be called _pytorch-example_, accept the terms and click on *Install*. You can modify the different installation parameters at the bottom. We will leave them by default as shown below, but you can read more about setting up the parameters [here](https://cloud.ibm.com/catalog/content/pytorch "here").
+* A new window opens, select the cluster and enter the name you want for the PyTorch workspace, in this case, it will be called _pytorch-example_, accept the terms and click on *Install*. You can modify the different installation parameters at the bottom. We will leave them by default as shown below, but you can read more about setting up the parameters [here](https://cloud.ibm.com/catalog/content/pytorch "here").
 
 ![Screenshot](pytorch2.PNG)
 
