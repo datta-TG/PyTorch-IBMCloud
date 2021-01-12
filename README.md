@@ -17,12 +17,12 @@ If you have a Lite account, you can upgrade it. Click [here](https://cloud.ibm.c
 
 ![Screenshot](KubernetesPaid1.PNG)
 
-* We'll choose the Standard Plan for the purposes of this documentation as the Free Plan may fall short in resources when deploying your pods. We highly recommend to use a Standard Plan with the hardware that suits you the best. If you're selecting the Standard Plan, please make sure you select the adequate requirements,
+We'll choose the Standard Plan for this documentation as the Free Plan may fall short in resources when deploying your pods. We highly recommend using a Standard Plan with the hardware that suits you the best. If you're selecting the Standard Plan, please make sure you select the adequate requirements,
 
-* Select your Kubernetes Version to be latest available or the required one by your application. In our example we have set it to be '1.18.13'.
+* Select your Kubernetes Version to be the latest available or the required one by your application. In this example, we have set it to be '1.18.13'.
 * Select Infrastructure as 'Classic'.
 * Leave Resource Group to 'Default'.
-* Select Geography to the one that suits you better.
+* Select Geography to the one that suits you better or that fits your infrastructure.
 * Select Availability to be 'Single Zone' or 'Multi Zone' depending on your needs.
 * Select a Worker Zone that suits you better or that fits your infrastructure.
 
@@ -62,7 +62,7 @@ Wait a few minutes while your cluster is deployed.
 
 ## Step 3: Install PyTorch
 
-* Click on the search section at the top of the main page, type PyTorch and click on it.
+* Click on the search section at the top of the main page, type PyTorch, and click on it.
 
 ![Screenshot](pytorch1.PNG)
 
