@@ -53,11 +53,11 @@ The following checkmark and the word 'normal' will appear once the Kubernetes Cl
 
 * Click on the search section at the top of the main page, select IBM Cloud Block Storage, and click on it.
 
-![Screenshot](Storage1.PNG)
+![Screenshot](StoragePaid1.PNG)
 
 * A new window opens, select the cluster and enter the name you want for this workspace, in this case, it will be called _storage-example_, accept the terms, click *Install* and wait a few minutes.
 
-![Screenshot](StoragePaid1.PNG)
+![Screenshot](StoragePaid2.PNG)
 
 
 ## Step 3: Install PyTorch
@@ -75,7 +75,7 @@ The following checkmark and the word 'normal' will appear once the Kubernetes Cl
 
 * Go to *Resources List* in the Left Navigation Menu and click on *Kubernetes*.
 
-![Screenshot](test11.png)
+![Screenshot](test1.png)
 
 * Click the *Actions* button and select *Web terminal*.
 
@@ -85,21 +85,23 @@ The following checkmark and the word 'normal' will appear once the Kubernetes Cl
 
 ![Screenshot](test3.PNG)
 
-* Once you have installed the terminal, click on the action button again, select web terminal, and type the following command. It will show you the workspaces of your cluster. You can see *pytorch-example* is now active.
+![Screenshot](test7.PNG)
+
+* Once you have installed the terminal, open it, select web terminal, and type the following command. It will show you the workspaces of your cluster. You can see *pytorch-example* is now active.
 
 `$ kubectl get ns`
 
-![Screenshot](test4.PNG)
+![Screenshot](testpytorch1.PNG)
 
 * You can then obtain more data about the service and it's pods.
 
 `$ kubectl get pod -n NAMESERVICE -o wide`
 
-![Screenshot](test5.PNG)
+![Screenshot](testpytorch2.PNG)
 
 `$ kubectl get service -n NAME SERVICE`
 
-![Screenshot](test6.PNG)
+![Screenshot](testpytorch3.PNG)
 
 * Select the pod within your service using bash.
 
@@ -109,7 +111,7 @@ The following checkmark and the word 'normal' will appear once the Kubernetes Cl
 
 `python -c "import torch; print(torch.__version__)"`
 
-![Screenshot](test8.PNG)
+![Screenshot](testpytorch4.PNG)
 
 You have finished the installation, enjoy your PyTorch installation!
 
